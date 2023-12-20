@@ -1,7 +1,7 @@
 #ifndef INSTRS_H_
 #define INSTRS_H_
 
-#include "types.h"
+#include "../types.h"
 
 // This contains declarations for every single opcode, besides unused ones
 

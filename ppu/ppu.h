@@ -2,7 +2,7 @@
 #define PPU_H_
 
 #include <Windows.h>
-#include "types.h"
+#include "../types.h"
 
 #define SCANLINE_LENGTH 456
 #define SCANLINE_COUNT 154

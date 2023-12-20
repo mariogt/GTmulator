@@ -21,17 +21,17 @@ LRESULT CALLBACK WindowProc(HWND win, UINT msg, WPARAM wParam, LPARAM lParam)
 }
 
 // Win32 doesn't do int main like normal, so this is where the entry point is
-int WINAPI WinMain(HINSTANCE instance, HINSTANCE pInstance, PWSTR cmdLine, int cmdShow) 
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLine, int nCmdShow)
 {
 	WNDCLASSW windowClass = { 0 };
 	wchar_t className[] = L"GameBoy Emulator";
 
 	windowClass.lpfnWndProc = WindowProc;
-	windowClass.hInstance = instance;
+	windowClass.hInstance = hInstance;
 	windowClass.lpszClassName = className;
 
 	RegisterClass(&windowClass);
-	HWND window = CreateWindowEx(0, className, L"GameBoy Emulator", WS_OVERLAPPEDWINDOW | WS_VISIBLE, CW_USEDEFAULT, CW_USEDEFAULT, (v_HRES + 4) * 4, (v_VRES + 10) * 4, 0, 0, instance, 0);
+	HWND window = CreateWindowEx(0, className, L"GameBoy Emulator", WS_OVERLAPPEDWINDOW | WS_VISIBLE, CW_USEDEFAULT, CW_USEDEFAULT, (v_HRES + 4) * 4, (v_VRES + 10) * 4, 0, 0, hInstance, 0);
 	HDC hdc = GetDC(window);
 
 	// Emulator initialization

@@ -1,5 +1,5 @@
-#include "types.h"
-#include "mem.h"
+#include "../types.h"
+#include "../mem.h"
 #include "ppu.h"
 
 // PPU Mode transitions ///////////////////////////////////////////////////////////////////////////

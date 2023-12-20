@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdlib.h>
 #include "mem.h"
-#include "ppu.h"
+#include "ppu/ppu.h"
 #include "hwio.h"
 
 // Full contents of the DMG bootrom, checks the cartridge header, scrolls

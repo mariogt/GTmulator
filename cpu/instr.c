@@ -1,6 +1,6 @@
 #include "instr.h"
-#include "types.h"
-#include "mem.h"
+#include "../types.h"
+#include "../mem.h"
 #include "cpu.h"
 
 /*

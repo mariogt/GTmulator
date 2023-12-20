@@ -5,8 +5,8 @@
 #include "joypad.h"
 #include "timers.h"
 #include "cart.h"
-#include "cpu.h"
-#include "ppu.h"
+#include "cpu/cpu.h"
+#include "ppu/ppu.h"
 
 // Start addresses (s)
 #define s_ROM_00 	0x0000

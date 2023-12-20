@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "cpu.h"
-#include "mem.h"
+#include "../mem.h"
 #include "instr.h"
 
 // Interrupt bit defines

@@ -1,5 +1,5 @@
 #include "ppu.h"
-#include "mem.h"
+#include "../mem.h"
 
 // Not really the size as much as it is the value of the index
 //		of the last pixel with respect to the first, only used

@@ -1,7 +1,7 @@
 #include <Windows.h>
 #include "ppu.h"
-#include "hwio.h"
-#include "mem.h"
+#include "../hwio.h"
+#include "../mem.h"
 
 // PPU initialize
 void init_ppu(struct PPU* ppu) 

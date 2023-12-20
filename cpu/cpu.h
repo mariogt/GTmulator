@@ -1,7 +1,7 @@
 #ifndef CPU_H_
 #define CPU_H_
 
-#include "types.h"
+#include "../types.h"
 
 // The flags register bits (lower 8 bits of AF register)
 enum flagBits
